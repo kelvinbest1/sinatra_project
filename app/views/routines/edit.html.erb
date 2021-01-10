@@ -1,0 +1,8 @@
+<h1>Editing your Routine</h1>
+<h3>Edit for: <h2 class="confirm"><%= @routine.exercise %></h2></h3>
+
+<form action="/routines/<%= @routine.id %>" method="post">
+  <input id="hidden" type="hidden" name="_method" value="patch">
+  <textarea type="text" name="exercise" placeholder="Updated routine text"></textarea>
+  <input type="submit" value="update">
+</form>

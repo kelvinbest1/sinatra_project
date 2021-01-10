@@ -1,0 +1,13 @@
+<h1></h1>
+<h1>Welcome to Your Exercise Routines</h1>
+  <ol>
+  <% Array(@routines).each do |routine|%>
+    <li>
+      <a href="/routines/<%= routine.id%>">
+        <%=routine.exercise%>
+      </a>
+    </li>
+    <%end%>
+  </ol>
+<br />
+  <!-- <input type="submit" value="signout"> -->

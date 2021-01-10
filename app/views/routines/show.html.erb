@@ -1,0 +1,13 @@
+<h1>Routine show page</h1>
+<h3>Delete for: <h2 class="confirm"><%= @routine.exercise %></h2></h3>
+
+<p>
+  <form action="/routines/<%= @routine.id %>/delete" method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Delete">
+  </form>
+<br />
+
+<p>
+<a href="/routines/<%=@routine.id%>/edit">Edit Routine </a>
+</p>
