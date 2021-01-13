@@ -108,4 +108,4 @@ class RoutinesController < ApplicationController
        redirect to '/signin'
      end
    end
-  end
+  end 
